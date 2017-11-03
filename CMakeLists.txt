@@ -331,15 +331,12 @@ if (BUILD_FRAMEWORK)
   )
 endif ()
 
-set(CMAKE_DEBUG_POSTFIX d)
-
 add_library(freetype
   ${PUBLIC_HEADERS}
   ${PUBLIC_CONFIG_HEADERS}
   ${PRIVATE_HEADERS}
   ${BASE_SRCS}
 )
-
 
 if (BUILD_SHARED_LIBS)
   set_target_properties(freetype PROPERTIES
